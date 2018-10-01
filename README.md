@@ -1,7 +1,7 @@
 # portfolio
 Portfolio uppgift
-första individuella skolarbetet. 
-
+första individuella skolarbetet. ska lämnas in första november.
+hello world
 
 colors :
 MORNING SKY : #CAE4D8;

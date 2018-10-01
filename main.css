@@ -40,7 +40,7 @@ nav{
 }
 .container{
   padding-top: 35px;
-  background: #CAE4D8;
+  background: #88c4a9;
   display: flex;
   flex-direction: column;
 }
@@ -64,7 +64,7 @@ nav{
   }
   .container{
     width: 100%;
-    background: #CAE4D8;
+    background: #88c4a9;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -77,6 +77,8 @@ nav{
     position: relative;
     left: -3000px;
     min-width: 600px;
+    height: 300px;
+    margin: 10px auto;
     flex-direction: row;
     width: 60%;
     justify-content: space-evenly;

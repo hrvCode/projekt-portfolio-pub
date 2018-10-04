@@ -56,7 +56,6 @@ color: #b01699;
   text-decoration: none;
 }
 nav{
-  position: relative;
   z-index: 999;
   background: #ffffff;
   border-bottom: 3px solid #6c6c6c;
@@ -68,11 +67,6 @@ nav{
   top: -100px;
 } */
 /*sticky nav*/
-.sticky-nav{
-  position:fixed;
-  top:0;
-  transition: all ease 1s;
-}
 .top-nav{
   max-width: 95%;
   height: 100px;
@@ -107,7 +101,7 @@ section:nth-child(odd){
   margin: auto;
   display: flex;
   flex-direction: row;
-  height: 80vh;
+  height: auto;
   box-shadow: 1px 2px 1px #00303F32;
 }
 .slides{
@@ -119,6 +113,11 @@ section:nth-child(odd){
 @media screen and (min-width: 700px){
   .welcome-showcase{
     height: 100vh;
+  }
+  .sticky-nav{
+    position:fixed;
+    top:0;
+    transition: all ease 1s;
   }
   .container{
     width: 100%;
@@ -140,5 +139,8 @@ section:nth-child(odd){
     height: 600px;
     margin: auto;
     width: 100%;
+  }
+  nav{
+    height: 100px;
   }
 }

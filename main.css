@@ -7,11 +7,56 @@ body, html{
 img{
   height: 150px;
   width: 150px;
+
+}
+* > h2{
+  color: #000000;
+}
+nav{
+  z-index: 999;
+  background: #ffffff;
+  border-top: 3px solid #f3f3f3;
+  border-bottom: 3px solid #f3f3f3;
+  width: 100%;
+}
+section:nth-child(odd){
+  background: #f3f3f3;
+}
+footer{
+
+}
+/*ID*/
+#welcome-name{
+color: #b01699;
+}
+/* NAVBAR !!!!!!!!!!!!*/
+#logo{
+  width: auto;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+#logo a img{
+  width: 50px;
+  margin:0;
+  display: inline-block;
+  text-decoration: none;
+  height: 100%;
+}
+/*CLASSSESSSSS*/
+.section-title h2{
+  font-size: 2em;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.section-title{
+  text-align: left;
 }
 .flex{
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 .welcome-showcase{
@@ -20,6 +65,10 @@ img{
   background-image: url('https://images.unsplash.com/photo-1538421385567-8395e14f445b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3c48bccdf3bfa2ed7c04f3bf61fa2bb3&auto=format&fit=crop&w=1950&q=80');
   background-repeat: no-repeat;
   background-size: cover;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .intro-button{
   border-radius: 180px;
@@ -31,10 +80,11 @@ img{
   color: black;
   letter-spacing: 2px;
   font-size: 1.2em;
+  transition: box-shadow  ease-out 0.3s;
 }
 .intro-button:hover{
   box-shadow: 0 0 10px purple;
-  transition: all ease-in 0.2s;
+  transition: all ease-in 0.3s;
 }
 .welcome-showcase h1{
   font-family: 'Biryani', sans-serif;
@@ -45,38 +95,37 @@ img{
   padding:0;
   margin:0;
 }
-#welcome-name{
-color: #b01699;
-}
-/* NAVBAR !!!!!!!!!!!!*/
-#logo a img{
-  width: 95%;
-  height: auto;
-  display: block;
-  text-decoration: none;
-}
-nav{
-  z-index: 999;
-  background: #ffffff;
-  border-bottom: 3px solid #6c6c6c;
-  width: 100%;
-}
-/*Pre-sticky nav*/
-/* .pre-sticky{
-  position: absolute;
-  top: -100px;
-} */
-/*sticky nav*/
 .top-nav{
   max-width: 95%;
-  height: 100px;
+  height: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin:auto;
 }
-/* .top-right-nav{
-} */
+.hiddenNav{
+  height:56px;
+  width:100%;
+  display: none;
+}
+.container{
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1600px;
+  margin: auto;
+  overflow-x: hidden;
+}
+.box{
+  background: #ffffff;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  box-shadow: 1px 2px 1px #00303F32;
+  line-height: 1.8;
+}
 .top-right-nav a{
   float: left;
   display: block;
@@ -86,31 +135,82 @@ nav{
   text-align: center;
   padding: 15px;
 }
-.container{
-  background: #c5bfc8;
-  display: flex;
-  flex-direction: column;
-}
-section:nth-child(odd){
-  background: #f0dfdd;
-}
-.box{
-  padding-top: 25px;
-  background: #f3f3f3;
-  width: 100%;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  height: auto;
-  box-shadow: 1px 2px 1px #00303F32;
+.top-right-nav a:hover{
+  color: green;
 }
 .slides{
-    flex-direction: row;
 }
 .box-content{
-  margin: 10px;
+ margin:10px;
 }
-@media screen and (min-width: 700px){
+.flex-table{
+  width: 80%;
+  min-width: 350px;
+  margin: 35px auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+}
+.column-table{
+  color: white;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+.row{
+  margin: 5px 0px;
+  margin-left: 10px;
+  justify-content: space-between;
+  display: flex;
+  opacity: 0;
+  width: 1%;
+  background: #438a22;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgba(0, 10, 0, 0.5);
+}
+.flex-table h3{
+  font-family: 'Biryani', sans-serif;
+  margin-left: 10px;
+}
+.column-table span {
+  display: inline-block;
+  margin-top: 5px;
+}
+.row > span{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0 5px;
+}
+.table-procent{
+  float: right;
+}
+.html-row{
+  width: 0%;
+}
+.css-row{
+  width: 0%;
+}
+.js-row{
+  width: 0%;
+}
+.csharp-row{
+  width: 0%;
+}
+.row-slide{
+
+}
+.moveTable{
+  display:flex;
+  transition: "width ease 2s";
+}
+@media screen and (min-width: 600px){
+  .top-nav{
+    width: 80%;
+  }
+  .top-right-nav a{
+    font-size: 18px;
+  }
   .welcome-showcase{
     height: 100vh;
   }
@@ -126,21 +226,25 @@ section:nth-child(odd){
     flex-wrap: wrap;
   }
   .box-content{
-    margin:0;
-    max-width: 450px;
-    padding-left:  30px;
+    margin: 0 100px;
+    max-width: 400px;
   }
   .slides{
     position: relative;
-    left: -3000px;
+    left: -2000px;
+    width: 100%;
   }
   .box{
+    min-height: 100vh;
     min-width: 600px;
-    height: 600px;
+    min-height: 600px;
     margin: auto;
     width: 100%;
   }
-  nav{
-    height: 100px;
+  .flex{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
   }
 }

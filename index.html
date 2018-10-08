@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Biryani" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="icon" href="favicon.ico">
-    <title>Min portfolio</title>
+    <title>JonathanS | Front-End Portfolio</title>
   </head>
   <body>
-    <div class="welcome-showcase flex">
+    <div class="welcome-showcase">
         <h1>
            Hi, I'm <span id="welcome-name">Jonathan Silkewall</span>.<br />
           Front-End Developer
@@ -18,6 +18,8 @@
         <a href="#intro" class="intro-button">Read more</a>
     </div>
       <header>
+        <div class="hiddenNav">
+        </div>
         <nav id="navbar">
           <div class="top-nav" id="intro">
             <div id="logo">
@@ -31,30 +33,60 @@
           </div>
         </nav>
       </header>
-      <div class="container flex">
-        <section class="box flex" id="about">
-          <div class="slides flex" id="slide1">
-            <div class="box-img flex">
+      <div class="container" id="about">
+        <section class="box flex" style="width:100%;">
+          <div class="section-title">
+            <h2>About</h2>
+          </div>
+          <div class="slides flex">
+            <div class="box-img">
               <img src="logo.png" alt="Logo">
             </div>
-            <div class="box-content">
-                <h2>About</h2>
+            <article class="box-content">
+                <h2>Front-End Developer</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt,
                    nulla sed condimentum suscipit, odio lacus aliquam erat, eget condimentum elit metus at est.
                     Phasellus finibus semper lectus et laoreet. Vestibulum commodo convallis ante eget pharetra.
-                    Nulla molestie neque ut tellus semper, sit amet ultricies tortor posuere. Nullam mattis consequat quam quis tempor.
-                     Vivamus blandit feugiat metus eu convallis. Morbi in feugiat urna. Quisque vel volutpat urna.
-                      Nunc volutpat sed nulla id hendrerit.</p>
+                    Nulla molestie neque ut tellus semper</p>
+            </article>
+          </div>
+          <div class="flex-table">
+            <h3>Skills</h3>
+            <div class="row html-row">
+              <div class="column-table">
+                <span>HTML</span>
+              </div>
+              <span class="rowRange">70%</span>
+            </div>
+            <div class="row css-row">
+                <div class="column-table">
+                  <span>CSS</span>
+                </div>
+                <span class="rowRange">70%</span>
+            </div>
+            <div class="row js-row">
+              <div class="column-table">
+                <span>Javascript</span>
+              </div>
+              <span class="rowRange">55%</span>
+            </div>
+            <div class="row csharp-row row-slide">
+              <div class="column-table">
+                <span>C#</span>
+              </div>
+              <span class="rowRange">45%</span>
             </div>
           </div>
         </section>
         <section class="box flex" id="portfolio">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+          </div>
           <div class="slides flex">
-            <div class="box-img flex">
+            <div class="box-img">
               <img src="logo.png" alt="Logo">
             </div>
             <div class="box-content">
-                <h2>Portfolio</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt,
                    nulla sed condimentum suscipit, odio lacus aliquam erat, eget condimentum elit metus at est.
                     Phasellus finibus semper lectus et laoreet. Vestibulum commodo convallis ante eget pharetra.
@@ -65,12 +97,12 @@
           </div>
         </section>
         <section class="box flex" id="contact">
+          <div class="section-title">
+            <h2>Contact</h2>
+          </div>
           <div class="slides flex">
-            <div class="box-img flex">
-              <img src="logo.png" alt="">
-            </div>
             <div class="box-content">
-                <h2>Contact</h2>
+              <h2>Email phone icQ?</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt,
                    nulla sed condimentum suscipit, odio lacus aliquam erat, eget condimentum elit metus at est.
                     Phasellus finibus semper lectus et laoreet. Vestibulum commodo convallis ante eget pharetra.
